@@ -35,4 +35,5 @@ public interface EmployeeRepository extends CrudRepository<Employee, Long>{
 	@Query("SELECT e.dept, MAX(e.salary) FROM Employee e GROUP BY e.dept")
 	List<Object[]> findMaxSalaryByDept();
 	
+	
 }
