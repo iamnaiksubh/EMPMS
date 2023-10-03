@@ -31,8 +31,9 @@ public class EmpmsApplication {
 		List<Object[]> result = employeeRepository.findMaxSalaryByDept();
 		
 		result.forEach(obj -> {
-//			System.out.println(obj[0] + " " + obj[1]);
 			System.out.println(Arrays.toString(obj));
+
+//			System.out.println(obj[0] + " " + obj[1]);
 		});
 		
 		
